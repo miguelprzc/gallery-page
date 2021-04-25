@@ -1,4 +1,161 @@
 body {
-font-family: 'Montserrat', sans-serif;
-box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  margin: 5% 0;
+  display: grid;
+  grid-template-rows: 35% auto;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* ------------ HEADER ---------- */
+.profile-container {
+  grid-row-start: 1;
+  margin: 0 10%;
+  display: grid;
+  width: 80vw;
+  max-height: 45vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto 15vh;
+  grid-template-areas: 
+    "profile-pic profile-pic profile-pic"
+    "profile-name profile-name profile-name"
+    "location location location"
+    "posts followers following";
+  text-align: center;
+  justify-items: center;
+}
+
+.profile-pic {
+  grid-area: profile-pic;
+  align-items: center;
+  width: 25%;
+  border-radius: 10%;
+}
+
+.profile-name {
+  grid-area: profile-name;
+  margin: 10px;
+  color: #4E5150;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+}
+
+.location {
+  grid-area: location;
+  margin-bottom: 10px;
+  color: #A9A9A9;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+}
+
+.stats {
+  background-color: #E5E5E5;
+  width: 90%;
+  min-width: 78px;
+  max-width: 100px;
+  height: 90%;
+  min-height: 52px;
+  max-height: 67px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.number {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #4E5150;
+}
+
+.category {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #BDBDBD;
+}
+
+.posts {
+  grid-area: posts;
+}
+
+.followers{
+  grid-area: followers;
+}
+
+.folowing {
+  grid-area: following;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+
+.gallery-container {
+  grid-row-start: 2;
+  margin: 1% 2.5%;
+  display: grid;
+  width: 95vw;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+    "figure-1 figure-2 figure-2"
+    "figure-3 figure-3 figure-4"
+    "figure-5 figure-6 figure-4";
+  gap: 5px;
+  justify-items: center;
+}
+
+.figure-1 {
+  grid-area: figure-1;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.figure-2 {
+  grid-area: figure-2;
+  width: 100%;
+  border-radius: 3%;
+}
+
+.figure-3 {
+  grid-area: figure-3;
+  width: 100%;
+  border-radius: 3%;
+}
+
+.figure-4 {
+  grid-area: figure-4;
+  width: 100%;
+  border-radius: 3%;
+}
+
+.figure-4 {
+  grid-area: figure-4;
+  width: 100%;
+  border-radius: 7%;
+}
+
+.figure-5 {
+  grid-area: figure-5;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.figure-6 {
+  grid-area: figure-6;
+  width: 100%;
+  border-radius: 5%;
+}
+
+
+
+
