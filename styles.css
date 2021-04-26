@@ -1,6 +1,5 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  box-sizing: border-box;
   margin: 5% 0;
   display: grid;
   grid-template-rows: 35% auto;
@@ -128,12 +127,6 @@ body {
 
 .figure-3 {
   grid-area: figure-3;
-  width: 100%;
-  border-radius: 3%;
-}
-
-.figure-4 {
-  grid-area: figure-4;
   width: 100%;
   border-radius: 3%;
 }
