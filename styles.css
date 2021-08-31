@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-} 
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -22,15 +22,20 @@ body {
 
 
 /* ------------ HEADER ---------- */
+
+.container {
+  display: block;
+}
+
 .profile-container {
   grid-row-start: 1;
   margin: 0 10%;
   display: grid;
-  width: 80vw;
-  max-height: 45vh;
+  /* width: 80vw; */
+  /* max-height: 45vh; */
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto auto 15vh;
-  grid-template-areas: 
+  grid-template-areas:
     "profile-pic profile-pic profile-pic"
     "profile-name profile-name profile-name"
     "location location location"
@@ -117,12 +122,12 @@ body {
   width: 95vw;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: 
+  grid-template-areas:
     "figure-1 figure-2 figure-2"
     "figure-3 figure-3 figure-4"
     "figure-5 figure-6 figure-4";
-  column-gap: 10px;
-  row-gap: 5px;
+  column-gap: 1%;
+  row-gap: 2%;
   justify-items: center;
 }
 
@@ -168,5 +173,34 @@ body {
 }
 
 
+@media (min-width: 516px) {
+  .profile-container {
+    padding:  0 5%;
+  }
+  .gallery-container {
+    margin-top: 5%;
+    padding: 0 7%;
+  }
+}
 
+@media (min-width: 768px) {
+  .profile-container {
+    padding:  0 14%;
+  }
+  .gallery-container {
+    margin-top: 5%;
+    padding: 0 12%;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .posts {
+    margin-left: 25%;
+  }
+
+  .following {
+    margin-right: 25%;
+  }
+}
 
