@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} 
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 5% 0;
@@ -5,10 +11,15 @@ body {
   grid-template-rows: 35% auto;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
+::-webkit-scrollbar {
+  width: 5px;
 }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgb(102, 102, 102);
+}
+
 
 /* ------------ HEADER ---------- */
 .profile-container {
@@ -99,6 +110,7 @@ body {
 /* ---------- MAIN CONTENT ---------- */
 
 .gallery-container {
+  height: 60vh;
   grid-row-start: 2;
   margin: 1% 2.5%;
   display: grid;
@@ -109,44 +121,50 @@ body {
     "figure-1 figure-2 figure-2"
     "figure-3 figure-3 figure-4"
     "figure-5 figure-6 figure-4";
-  gap: 5px;
+  column-gap: 10px;
+  row-gap: 5px;
   justify-items: center;
+}
+
+.fig {
+  height: 100%;
 }
 
 .figure-1 {
   grid-area: figure-1;
   width: 100%;
-  border-radius: 5%;
+  border-radius: 10px;
 }
 
 .figure-2 {
   grid-area: figure-2;
   width: 100%;
-  border-radius: 3%;
+  border-radius: 10px;
 }
 
 .figure-3 {
   grid-area: figure-3;
   width: 100%;
-  border-radius: 3%;
+  border-radius: 10px;
 }
 
 .figure-4 {
+  height: 100%;
   grid-area: figure-4;
   width: 100%;
-  border-radius: 7%;
+  border-radius: 15px;
 }
 
 .figure-5 {
   grid-area: figure-5;
   width: 100%;
-  border-radius: 5%;
+  border-radius: 10px;
 }
 
 .figure-6 {
   grid-area: figure-6;
   width: 100%;
-  border-radius: 5%;
+  border-radius: 10px;
 }
 
 
